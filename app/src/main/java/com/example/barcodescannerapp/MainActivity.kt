@@ -65,6 +65,7 @@ fun BarcodeScannerScreen() {
     }
 }
 
+@androidx.camera.core.ExperimentalGetImage
 @Composable
 fun CameraPreview(onBarcodeScanned: (String) -> Unit) {
     val context = LocalContext.current
